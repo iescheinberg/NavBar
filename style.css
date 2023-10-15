@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Roboto&display=swap');
+
+:root{
+    --color-primario: #c4e04a;
+    --color-base: #efe66b;
+    --color-detalles: #191507;
+    --color-celeste: #817870;
+    --color-marron: #f3eae8;
+    --fuente-titulos: 'Roboto', sans-serif;
+    --fuente-texto: 'Hind Madurai', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 0.8em;
+    height: 80px;
+    
+}
+
+.header .logo img{
+    cursor: pointer;
+    height: 70px;
+    width: auto;
+    
+}
+
+.header .logo{
+    transition: all 0.3s;
+}
+
+.header .logo:hover{
+    transform: scale(1.1);
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding: 0.2em 1em;
+    transition: all 0.3s;
+}
+
+.menu li:hover{
+    transform: scale(1.1);
+}
+
+
+.menu a{
+    font-size: 1.2em;
+    font-family: var(--fuente-titulos);
+    text-decoration: none;
+    color: var(--color-detalles);
+}
+
+.search input{
+    border-radius: 10px;
+    padding: 0.1em 0.5em;
+    font-family: var(--fuente-titulos);
+    border-style: none;
+    margin: 0.5em;
+}
+
+.search input:focus{
+    border-color: #c4e04a;  /* NO me lo toma */
+    background-color: #efe66b;
+}
+
+.search button{
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    font-family: var(--fuente-titulos);
+    border-radius: 10px;
+    background-color: #efe66b;
+    border: 1px solid #817870;
+    color: #191507;
+    transition: all 0.3s;
+}
+
+.search button:hover{
+    transform: scale(1.1);
+    background-color: #191507;
+    color: #c4e04a;
+}
+
+
+.burger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 830px) {
+    .burguer{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+}
