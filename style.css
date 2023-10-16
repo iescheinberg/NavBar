@@ -23,6 +23,7 @@
     align-items: center;
     padding: 0.2em 0.8em;
     height: 80px;
+    /* width: 100%; */
     
 }
 
@@ -96,6 +97,21 @@
     transform: scale(1.1);
     background-color: #191507;
     color: #c4e04a;
+}
+
+.buy-car{
+    margin: 0.5em 3em;
+    transition: all 0.3s;
+}
+
+.buy-car img{
+    width: 25px;
+    
+}
+
+.buy-car:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 
